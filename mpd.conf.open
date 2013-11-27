@@ -1,0 +1,22 @@
+music_directory     "~/Music"
+playlist_directory  "~/Music/meta/playlists"
+db_file             "~/.mpd/database"
+log_file            "~/.mpd/log"
+pid_file            "~/.mpd/pid"
+state_file          "~/.mpd/state"
+
+bind_to_address "127.0.0.1"
+bind_to_address "192.168.178.10"
+port "6600"
+password "weareibb227@read,add,control"
+password "85136937@read,add,control,admin"
+
+auto_update          "yes"
+replaygain           "track"
+gapless_mp3_playback "yes"
+
+audio_output {
+    type        "pulse"
+    name        "MPD Pulse"
+}
+

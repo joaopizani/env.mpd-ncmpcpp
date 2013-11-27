@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# Ubuntu / Upstart
+sudo service mpd stop
+sudo update-rc.d mpd disable
+
+# GNOME-based
+AUTOSTART_DIR="${HOME}/.config/autostart"
+mkdir -p ${AUTOSTART_DIR}
+cp mpd.desktop "${AUTOSTART_DIR}/"

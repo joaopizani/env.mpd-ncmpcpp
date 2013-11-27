@@ -1,0 +1,26 @@
+music_directory     "~/Music"
+playlist_directory  "~/Music/meta/playlists"
+db_file             "~/.mpd/database"
+log_file            "~/.mpd/log"
+pid_file            "~/.mpd/pid"
+state_file          "~/.mpd/state"
+
+bind_to_address "127.0.0.1"
+port "6600"
+
+auto_update          "yes"
+replaygain           "track"
+gapless_mp3_playback "yes"
+
+audio_output {
+    type        "pulse"
+    name        "MPD Pulse"
+}
+
+audio_output {
+    type      "fifo"
+    name      "visualize"
+    path      "/tmp/mpd.fifo"
+    format    "44100:16:2"
+}
+

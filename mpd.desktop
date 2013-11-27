@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=mpd
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_US]=MPD
+Name=MPD
+Comment[en_US]=
+Comment=
