@@ -12,3 +12,5 @@ sudo update-rc.d mpd disable
 AUTOSTART_DIR="${HOME}/.config/autostart"
 mkdir -p ${AUTOSTART_DIR}
 ln -s -f "${DIR}/mpd.desktop" "${AUTOSTART_DIR}/mpd.desktop"
+
+mpd
