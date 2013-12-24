@@ -13,7 +13,7 @@ sudo update-rc.d mpd disable
 # GNOME-based
 AUTOSTART_DIR="${HOME}/.config/autostart"
 mkdir -p "${AUTOSTART_DIR}"
-ln -s -f "${DIR}/mpd.desktop" "${AUTOSTART_DIR}/mpd.desktop"
+ln -s -f -n "${DIR}/mpd.desktop" "${AUTOSTART_DIR}/mpd.desktop"
 
 mpd
 
