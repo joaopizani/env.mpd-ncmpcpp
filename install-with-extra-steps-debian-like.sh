@@ -8,7 +8,7 @@ DIR="$(cd -P "$(dirname "$(readlink -f "${BASH_SOURCE[0]}")" )" && pwd)"
 sudo service mpd stop
 sudo update-rc.d mpd disable
 
-# GNOME-based
+# Freedesktop.org compliant
 AUTOSTART_DIR="${HOME}/.config/autostart"
 mkdir -p "${AUTOSTART_DIR}"
 ln -s -f -n "${DIR}/mpd.desktop" "${AUTOSTART_DIR}/mpd.desktop"

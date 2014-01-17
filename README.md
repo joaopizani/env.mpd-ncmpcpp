@@ -53,6 +53,19 @@ What this means is the following:
     In this way you can use (for example) an old computer in your house as a "music server" in the living room.
       + The client will be asked for a password upon connection. The default password is "mpd1" but can be changed in `mpd.conf.open`.
 
+**OBS:** You need to change the IP address to which MPD binds if you want to run it open in the LAN.
+Search for a line containing `bind_to_address "192.<rest-of-adress>"` in `mpd.conf.open` and insert the desired IP there.
 
 How to install
 --------------
+
+The way in which to install this configuration depends on whether you will run MPD in a system with a desktop enviroment
+and want MPD to be started at **login time** and be run by a **normal-user, non-privileged account**:
+
+  * If MPD will be run in a system with no desktop environment, the to install, run `./install-basic.sh`.
+      + In this case, you will need to arrange yourself for MPD to start at boot.
+
+  * If using a desktop environment, you can use the script `./install-with-extra-steps.sh`.
+      + This will make a `mpd.desktop` file at put it in the `autostart` directory of you DE,
+        making MPD be run at every log-in, _by the user logging in (not root)_.
+
