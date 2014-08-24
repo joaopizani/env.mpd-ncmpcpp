@@ -3,7 +3,7 @@
 DIR="$(cd -P "$(dirname "$(readlink -f "${BASH_SOURCE[0]}")" )" && pwd)"
 
 
-sudo apt-get install mpd ncmpcpp
+sudo apt-get install mpd mpc ncmpcpp
 
 
 MPDDIR="${HOME}/.mpd"
