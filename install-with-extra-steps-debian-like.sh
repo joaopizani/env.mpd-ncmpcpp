@@ -2,7 +2,7 @@
 
 DIR="$(cd -P "$(dirname "$(readlink -f "${BASH_SOURCE[0]}")" )" && pwd)"
 
-"${DIR}/install-basic.sh"
+"${DIR}/install-common.sh"
 
 # Ubuntu / Upstart
 sudo service mpd stop
@@ -14,4 +14,5 @@ mkdir -p "${AUTOSTART_DIR}"
 ln -s -f -n "${DIR}/mpd.desktop" "${AUTOSTART_DIR}/mpd.desktop"
 
 mpd
+mpc update
 
