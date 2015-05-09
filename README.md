@@ -73,7 +73,7 @@ whether you will run MPD in a system with a desktop environment or on a _headles
  * If MPD will be run in a system with no desktop environment, then to install run `./install-basic.sh`.
     + In this case, you will need to arrange yourself for MPD to start at boot.
 
- * If using a desktop environment, then you can run `./install-with-extra-steps.sh`.
+ * If using a desktop environment, then you can run `./install-complete.sh`.
     + This script will put a `mpd.desktop` file in the `autostart` directory of you desktop environment,
       effectively causing MPD to be run at every log-in, _by the user logging in (not root)_.
 
