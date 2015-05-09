@@ -4,9 +4,9 @@ DIR="$(cd -P "$(dirname "$(readlink -f "${BASH_SOURCE[0]}")" )" && pwd)"
 
 "${DIR}/install-common.sh"
 
-# Ubuntu / Upstart
-sudo service mpd stop
-sudo update-rc.d mpd disable
+# Systemd
+sudo systemctl stop mpd.service
+sudo systemctl disable mpd.service
 
 # Freedesktop.org compliant
 AUTOSTART_DIR="${HOME}/.config/autostart"
