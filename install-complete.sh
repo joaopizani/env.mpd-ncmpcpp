@@ -6,7 +6,9 @@ DIR="$(cd -P "$(dirname "$(readlink -f "${BASH_SOURCE[0]}")" )" && pwd)"
 
 # Systemd
 sudo systemctl stop mpd.service
+sudo systemctl stop mpd.socket
 sudo systemctl disable mpd.service
+sudo systemctl disable mpd.socket
 
 # Freedesktop.org compliant
 AUTOSTART_DIR="${HOME}/.config/autostart"
